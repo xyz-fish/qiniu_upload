@@ -1,0 +1,31 @@
+{
+  "name": "qn_upload",
+  "version": "1.0.0",
+  "description": "文件上传到七牛",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SirSong/qiniu_upload.git"
+  },
+  "keywords": [
+    "qiniu",
+    "upload",
+    "file"
+  ],
+  "author": "songyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirSong/qiniu_upload/issues"
+  },
+  "homepage": "https://github.com/SirSong/qiniu_upload#readme",
+  "devDependencies": {
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "qiniu": "^7.2.2"
+  }
+}
