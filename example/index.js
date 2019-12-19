@@ -3,6 +3,7 @@ const QiniuUpload = require('../index')
 
 const upload = new QiniuUpload(
   {
+    bucket: 'bucket',
     accessKey: 'qiniu accessKey',
     secretKey: 'qiniu secretKey'
   },

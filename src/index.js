@@ -1,8 +1,6 @@
 
 const qiniu = require('qiniu')
-
 const config = new qiniu.conf.Config()
-const bucket = 'mengmax'
 class QiniuUpload {
   constructor (qiuniuConfig, filepath, key) {
     this.config = qiuniuConfig
@@ -12,7 +10,7 @@ class QiniuUpload {
 
   uptoken () {
     const options = {
-      scope: `${bucket}:${this.key}`,
+      scope: `${this.config.bucket}:${this.key}`,
       returnBody: '{"key":"$(key)","hash":"$(etag)","fsize":$(fsize),"bucket":"$(bucket)","name":"$(x:name)"}'
     }
     const mac = new qiniu.auth.digest.Mac(this.config.accessKey, this.config.secretKey)
@@ -38,7 +36,7 @@ class QiniuUpload {
   }
 
   upload () {
-    const token = this.uptoken(bucket, this.key)
+    const token = this.uptoken(this.config.bucket, this.key)
     this.uploadFile(token, this.key, this.filepath)
   }
 }
