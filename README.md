@@ -16,9 +16,9 @@ const upload = new QnUpload({
   bucket: 'bucket', // 命名空间
   accessKey: '',
   secketKey: ''
-}, filePath, key)
+}
 
 //  methods
-upload.upload()
+upload.upload(filePath, key)
 
 ```
