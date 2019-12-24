@@ -1,5 +1,5 @@
 const path = require('path')
-const QiniuUpload = require('../index')
+const QiniuUpload = require('@mengmaxx/qn_upload')
 
 const upload = new QiniuUpload(
   {
