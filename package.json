@@ -21,11 +21,7 @@
     "url": "https://github.com/SirSong/qiniu_upload/issues"
   },
   "homepage": "https://github.com/SirSong/qiniu_upload#readme",
-  "devDependencies": {
-    "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
-  },
   "dependencies": {
-    "qiniu": "^7.2.2"
+    "qiniu": ">=7.2.2"
   }
 }
